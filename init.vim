@@ -1,0 +1,1 @@
+/home/makzmann/.config/nvim/init.vim
