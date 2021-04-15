@@ -8,6 +8,8 @@ set clipboard=unnamedplus
 set nohlsearch
 set scrolloff=10
 set termguicolors
+set hidden
+set signcolumn=yes
 
 set tabstop=4
 set softtabstop=4
@@ -24,6 +26,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'vimwiki/vimwiki'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
 
@@ -41,9 +44,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 
 let g:mapleader = ' '
 
-nnoremap <leader>W :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>Q :q!<CR>
+" nnoremap <leader>W :w<CR> " use ZZ = :wq
+" nnoremap <leader>q :q<CR> " use ZQ = :q!
 
 " # --- colors ---
 
