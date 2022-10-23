@@ -31,3 +31,6 @@ vim.opt.cmdheight = 1
 vim.g.mapleader = ' '
 
 vim.o.clipboard = 'unnamedplus'
+
+vim.o.laststatus = 3
+vim.o.winbar = '%=%M %f'
