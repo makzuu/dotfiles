@@ -33,4 +33,8 @@ vim.g.mapleader = ' '
 vim.o.clipboard = 'unnamedplus'
 
 vim.o.laststatus = 3
-vim.o.winbar = '%=%M %f'
+vim.o.winbar = '%=%M %f '
+
+vim.o.undofile = true
+
+vim.o.history = 1000
