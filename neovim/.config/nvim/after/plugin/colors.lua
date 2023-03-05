@@ -14,7 +14,6 @@ require("tokyonight").setup({
     sidebars = "transparent", -- style for sidebars, see below
   },
   sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
-  hide_inactive_statusline = true, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
 
   --- You can override specific color groups to use other groups or a hex color
   --- function will be called with a ColorScheme table

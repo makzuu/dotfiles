@@ -15,5 +15,3 @@ vim.opt.updatetime = 1000
 vim.opt.wrap = false
 
 vim.g.mapleader = ' '
-
-vim.cmd.colorscheme 'habamax'
