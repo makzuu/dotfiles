@@ -1,0 +1,2 @@
+alt + shift + s
+    maim --select | xclip -target image/png -selection clipboard
