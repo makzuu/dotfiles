@@ -1,4 +1,5 @@
-local builtin = require('telescope.builtin')
+local telescope_builtin = require('telescope.builtin')
+local rest_nvim = require('rest-nvim')
 
 function terminal()
     vim.cmd.new()
@@ -10,5 +11,8 @@ end
 
 vim.keymap.set('n', '<leader>st', terminal)
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
 
+-- TODO: Find a way to set or unset keymaps depending on the filetype
+vim.keymap.set('n', '<leader>rr', rest_nvim.run)
+vim.keymap.set('n', '<leader>rl', rest_nvim.last)
