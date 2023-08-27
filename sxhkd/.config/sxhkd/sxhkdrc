@@ -1,2 +1,8 @@
 alt + shift + s
     maim --select | xclip -target image/png -selection clipboard
+
+alt + shift + k
+    pactl set-sink-volume 0 +5%
+
+alt + shift + j
+    pactl set-sink-volume 0 -5%
