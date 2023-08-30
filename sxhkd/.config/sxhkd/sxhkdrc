@@ -1,8 +1,11 @@
-alt + shift + s
+super + s
     maim --select | xclip -target image/png -selection clipboard
 
-alt + shift + k
-    pactl set-sink-volume 0 +5%
+super + k
+    pactl set-sink-volume `pactl get-default-sink` +5%
 
-alt + shift + j
-    pactl set-sink-volume 0 -5%
+super + j
+    pactl set-sink-volume `pactl get-default-sink` -5%
+
+super + m
+    pactl set-sink-mute `pactl get-default-sink` toggle
