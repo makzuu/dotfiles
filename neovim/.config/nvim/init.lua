@@ -56,11 +56,26 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     'folke/tokyonight.nvim', 
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+    }
 })
 
 require('tokyonight').setup({
     style = 'moon',
     transparent = true,
+    styles = {
+        sidebars = 'transparent',
+    },
 })
 
 vim.cmd.colorscheme('tokyonight')
+
+require('nvim-treesitter.configs').setup({
+    ensure_installed = { 'c', 'lua', 'javascript', 'vimdoc' },
+
+    highlight = {
+        enable = true,
+    },
+})
