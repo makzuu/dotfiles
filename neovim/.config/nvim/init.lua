@@ -55,11 +55,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    'folke/tokyonight.nvim', 
+    'folke/tokyonight.nvim',
     {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
-    }
+    },
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
 })
 
 require('tokyonight').setup({
@@ -78,4 +81,15 @@ require('nvim-treesitter.configs').setup({
     highlight = {
         enable = true,
     },
+})
+
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = { 'clangd', 'lua_ls', 'eslint' },
+})
+
+require('mason-lspconfig').setup_handlers({
+    function (server_name)
+        require('lspconfig')[server_name].setup({})
+    end,
 })
