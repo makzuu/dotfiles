@@ -29,11 +29,11 @@ set('shiftwidth', 4)
 set('softtabstop', 4)
 set('tabstop', 4)
 
-function map(l, r, opts)
-    vim.keymap.set('n', l, r, opts)
+function nmap(lhs, rhs, opts)
+    vim.keymap.set('n', lhs, rhs, opts)
 end
 
-map('<leader>e', vim.cmd.Explore, { desc = 'open Netrw' })
+nmap('<leader>e', vim.cmd.Explore, { desc = 'open Netrw' })
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -63,6 +63,11 @@ require('lazy').setup({
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.3',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 })
 
 require('tokyonight').setup({
@@ -93,3 +98,24 @@ require('mason-lspconfig').setup_handlers({
         require('lspconfig')[server_name].setup({})
     end,
 })
+
+require('telescope').setup{
+  defaults = {
+    -- ...
+  },
+  pickers = {
+    find_files = {
+      theme = 'ivy',
+    },
+    git_files = {
+        theme = 'ivy',
+    },
+  },
+  extensions = {
+    -- ...
+  }
+}
+
+local builtin = require('telescope.builtin')
+nmap('<leader>ff', builtin.find_files, {})
+nmap('<leader>fg', builtin.git_files, {})
