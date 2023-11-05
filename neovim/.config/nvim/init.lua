@@ -68,6 +68,7 @@ require('lazy').setup({
         tag = '0.1.3',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} }
 })
 
 require('tokyonight').setup({
@@ -119,3 +120,9 @@ require('telescope').setup{
 local builtin = require('telescope.builtin')
 nmap('<leader>ff', builtin.find_files, {})
 nmap('<leader>fg', builtin.git_files, {})
+
+local ibl = require('ibl')
+ibl.setup({
+       indent = { char = '|' },
+       scope = { enabled = false }
+})
