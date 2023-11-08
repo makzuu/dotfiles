@@ -1,5 +1,5 @@
 super + s
-    maim --select | xclip -target image/png -selection clipboard
+    maim --select --hidecursor | xclip -target image/png -selection clipboard
 
 super + k
     pactl set-sink-volume `pactl get-default-sink` +5%
