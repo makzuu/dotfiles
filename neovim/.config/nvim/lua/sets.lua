@@ -21,3 +21,5 @@ vim.opt.hlsearch = false
 vim.opt.termguicolors = true
 
 vim.opt.colorcolumn = "80"
+
+vim.g.mapleader = " "
