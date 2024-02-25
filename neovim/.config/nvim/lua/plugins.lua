@@ -58,7 +58,13 @@ require("lazy").setup({
                             },
                             default_workspace = "notes",
                         },
-                    }
+                    },
+                    ["core.concealer"] = {
+                        config = {
+                            icon_preset = "diamond",
+                            folds = false,
+                        }
+                    },
                 }
             })
         end
