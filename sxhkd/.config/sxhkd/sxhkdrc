@@ -1,11 +1,14 @@
-super + s
-    maim --select --hidecursor | xclip -target image/png -selection clipboard
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +1000
 
-super + k
-    pactl set-sink-volume `pactl get-default-sink` +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -1000
 
-super + j
-    pactl set-sink-volume `pactl get-default-sink` -5%
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-super + m
-    pactl set-sink-mute `pactl get-default-sink` toggle
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+control + o ; s
+    maim --select --hidecursor | xclip -selection clipboard -target image/png
