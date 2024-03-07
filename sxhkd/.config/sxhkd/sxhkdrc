@@ -10,5 +10,5 @@ XF86AudioMute
 XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-control + o ; s
+Print
     maim --select --hidecursor | xclip -selection clipboard -target image/png
