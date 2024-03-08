@@ -6,7 +6,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.color_scheme = 'Tokyo Night (Gogh)'
+config.color_scheme = 'rose-pine'
 config.font = wezterm.font 'Hermit'
 config.window_background_opacity = .98
 
