@@ -3,5 +3,6 @@
   "neorg": { "branch": "main", "commit": "f3fce02055f8beec59926086c9fb5c25b5072679" },
   "nvim-treesitter": { "branch": "master", "commit": "d10e856c11ccc6ca4d9c11766a6ef605c375dd0a" },
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" },
-  "rose-pine": { "branch": "main", "commit": "f977eeba34b030b37f93ece2fbd792477606203b" }
+  "rose-pine": { "branch": "main", "commit": "f977eeba34b030b37f93ece2fbd792477606203b" },
+  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }
 }
