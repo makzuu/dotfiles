@@ -7,7 +7,7 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = 'Tokyo Night (Gogh)'
-config.font = wezterm.font 'Hermit'
+config.font = wezterm.font('HurmitNerdFontMono')
 config.window_background_opacity = .98
 
 config.use_fancy_tab_bar = false
