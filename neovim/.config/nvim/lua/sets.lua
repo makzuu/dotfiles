@@ -25,3 +25,5 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
 vim.opt.conceallevel = 3
+
+vim.opt.guicursor = "a:block"
