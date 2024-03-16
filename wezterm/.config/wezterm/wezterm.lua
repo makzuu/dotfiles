@@ -1,10 +1,5 @@
-local wezterm = require 'wezterm'
-
-local config = {}
-
-if wezterm.config_builder then
-	config = wezterm.config_builder()
-end
+local wezterm = require('wezterm')
+local config = wezterm.config_builder()
 
 config.font = wezterm.font('HurmitNerdFontMono')
 config.color_scheme = 'rose-pine'
