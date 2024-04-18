@@ -45,6 +45,7 @@ require("lazy").setup({
     {
         "nvim-neorg/neorg",
         build = ":Neorg sync-parsers",
+        version = "v7.0.0", -- This is the important part!
         lazy = false,
         dependencies = { "nvim-lua/plenary.nvim" },
         config = function()
