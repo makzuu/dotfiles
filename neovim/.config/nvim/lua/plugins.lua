@@ -43,34 +43,6 @@ require("lazy").setup({
         end
     },
     {
-        "nvim-neorg/neorg",
-        build = ":Neorg sync-parsers",
-        version = "v7.0.0", -- This is the important part!
-        lazy = false,
-        dependencies = { "nvim-lua/plenary.nvim" },
-        config = function()
-            require("neorg").setup({
-                load = {
-                    ["core.defaults"] = {},
-                    ["core.dirman"] = {
-                        config = {
-                            workspaces = {
-                                notes = "~/notes/personal",
-                            },
-                            default_workspace = "notes",
-                        },
-                    },
-                    ["core.concealer"] = {
-                        config = {
-                            icon_preset = "diamond",
-                            folds = false,
-                        }
-                    },
-                }
-            })
-        end
-    },
-    {
         'nvim-telescope/telescope.nvim', tag = '0.1.6',
         -- or                              , branch = '0.1.x',
         dependencies = { 'nvim-lua/plenary.nvim' },

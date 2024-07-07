@@ -1,8 +1,7 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "31ddbea7c10b6920c9077b66c97951ca8682d5c8" },
-  "neorg": { "branch": "main", "commit": "4cbedbbdd4ccb6f45a2045477f5658a1311dffa3" },
-  "nvim-treesitter": { "branch": "master", "commit": "b0ac1135fe304edd34e18204304906744db0fe63" },
-  "plenary.nvim": { "branch": "master", "commit": "8aad4396840be7fc42896e3011751b7609ca4119" },
-  "rose-pine": { "branch": "main", "commit": "9cd7d8aad3606a95d733a45d16275eb7a5a836a3" },
+  "lazy.nvim": { "branch": "main", "commit": "933f0b596c7372daf534373ae9a11e98744b8636" },
+  "nvim-treesitter": { "branch": "master", "commit": "a8c082b4f5b3b70bde2ffb08cc112dfd7e515fb3" },
+  "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "rose-pine": { "branch": "main", "commit": "dded5c15e9d27ac95ad1e803b35a752d80f3f42b" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }
 }
