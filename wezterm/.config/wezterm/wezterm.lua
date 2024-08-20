@@ -13,5 +13,7 @@ config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.force_reverse_video_cursor = true
 
+config.audible_bell = "Disabled"
+
 -- and finally, return the configuration to wezterm
 return config
