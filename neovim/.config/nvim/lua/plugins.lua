@@ -62,4 +62,5 @@ require("lazy").setup({
             vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
         end
     },
+    'ThePrimeagen/vim-be-good',
 })
