@@ -1,0 +1,4 @@
+font-family = Iosevka Extended
+theme = tokyonight
+shell-integration-features = no-cursor
+cursor-style = block
