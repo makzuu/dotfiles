@@ -1,4 +1,9 @@
 font-family = Iosevka Extended
+font-synthetic-style = false
+
 theme = tokyonight
-shell-integration-features = no-cursor
+
 cursor-style = block
+shell-integration-features = no-cursor
+
+window-decoration = false
