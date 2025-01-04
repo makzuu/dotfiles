@@ -6,4 +6,4 @@ theme = tokyonight
 cursor-style = block
 shell-integration-features = no-cursor
 
-window-decoration = false
+gtk-titlebar = false
