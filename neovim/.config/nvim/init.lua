@@ -1,3 +1,7 @@
+local colors = {
+    orange = "#fab387",
+}
+
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
@@ -27,7 +31,7 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4 
 
-vim.cmd("highlight iCursor guibg='#cba6f7'")
-vim.opt.guicursor="a:block,i-r-ci-cr-t:blinkon500-blinkoff500-iCursor"
+vim.cmd.highlight("insertCursor guibg=" .. colors.orange)
+vim.opt.guicursor="a:block,i-r-ci-cr-t:blinkon500-blinkoff500-insertCursor"
 
 vim.cmd("colorscheme catppuccin")
